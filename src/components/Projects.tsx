@@ -7,28 +7,28 @@ import { Card3D } from "./Card3D";
 export const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React and Node.js, featuring real-time inventory management and secure payment processing.",
+      title: "Gate Pass System",
+      description: "Developed a real-time facial recognition application to streamline campus security, enhancing the entry/exit process for students and staff. Designed and integrated AWS Rekognition for facial recognition and S3 Buckets for efficient data storage, ensuring scalability for large datasets. Achieved 79% model accuracy with a local setup, focusing on performance, scalability, and usability.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
+      tech: ["AWS Rekognition", "S3 Bucket", "OpenCV", "React.js"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/rishav2404/Drishti-The-Ultimate-Eye"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      title: "Club Management App",
+      description: "Developed a mobile application to centralize event management for college student clubs, resulting in a 40% increase in event attendance and a 25% rise in student engagement. Integrated Firebase Auth and Realtime Database for real-time user management and updates, ensuring seamless performance and user satisfaction. Improved application performance with a focus on mobile responsiveness and user experience.",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
-      tech: ["React", "TypeScript", "Firebase", "Tailwind CSS"],
+      tech: ["Kotlin", "Firebase Auth", "Android Studio", "Firebase Realtime Database"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/rishav2404/SMVDU_Club_App"
     },
     {
-      title: "Weather Dashboard",
-      description: "A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-      tech: ["Vue.js", "Express", "OpenWeather API", "Chart.js"],
-      liveUrl: "#",
-      githubUrl: "#"
+      description: "A visually engaging movie and TV show discovery platform with search, genre filtering, popularity/rating sorting, and detailed analytics for each title. Features interactive carousels, infinite scrolling, and trailers. Powered by The Movie Database (TMDb) API for up-to-date content and metadata.",
+      title: "Movie Mania",
+      tech: ["React.js", "Redux", "TMDb API", "Axios", "SCSS", "Vite"],
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop", // Placeholder, update with actual app screenshot if available
+      liveUrl: "https://movie-mania-liard.vercel.app",
+      githubUrl: "https://github.com/rishav2404/Movie-Mania",
     }
   ];
 

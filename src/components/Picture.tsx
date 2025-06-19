@@ -27,7 +27,7 @@ export const Picture = () => {
                     }}
                   >
                     <img
-                      src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face"
+                      src="/profile-pic.svg"
                       alt="Rishav Saha - Software Developer"
                       className="w-full h-full object-cover"
                       style={{

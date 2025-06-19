@@ -12,7 +12,6 @@ COPY . .
 
 RUN npm run build
 
-# -------- Stage 2: Lightweight production image --------
 FROM node:${NODE_VERSION}-alpine AS production
 
 # Install CA certificates
