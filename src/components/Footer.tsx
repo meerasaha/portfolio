@@ -1,38 +1,38 @@
 
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Facebook, Github, Instagram, Linkedin, Twitter, X, Youtube } from "lucide-react";
 
 export const Footer = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
       icon: Linkedin,
-      href: "https://linkedin.com/in/johndoe",
+      href: "https://linkedin.com/in/rishav24",
       color: "hover:text-blue-600 dark:hover:text-blue-400"
     },
     {
-      name: "Twitter",
+      name: "X",
       icon: Twitter,
-      href: "https://twitter.com/johndoe",
-      color: "hover:text-blue-400 dark:hover:text-blue-300"
+      href: "https://x.com/RISHAV0424",
+      color: "hover:text-blue-700 dark:hover:text-blue-300"
     },
     {
-      name: "Facebook",
-      icon: Facebook,
-      href: "https://facebook.com/johndoe",
-      color: "hover:text-blue-700 dark:hover:text-blue-500"
+      name: "GitHub",
+      icon: Github,
+      href: "https://github.com/rishav2404",
+      color: "hover:text-black-700 dark:hover:text-blue-500"
     },
     {
       name: "Instagram",
       icon: Instagram,
-      href: "https://instagram.com/johndoe",
+      href: "https://www.instagram.com/rishav_saha_24",
       color: "hover:text-pink-600 dark:hover:text-pink-400"
     },
-    {
-      name: "YouTube",
-      icon: Youtube,
-      href: "https://youtube.com/@johndoe",
-      color: "hover:text-red-600 dark:hover:text-red-400"
-    }
+    // {
+    //   name: "YouTube",
+    //   icon: Youtube,
+    //   href: "https://youtube.com/@johndoe",
+    //   color: "hover:text-red-600 dark:hover:text-red-400"
+    // }
   ];
 
   return (
@@ -45,7 +45,7 @@ export const Footer = () => {
           <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-md mx-auto">
             Follow me on social media for updates on my latest projects and insights.
           </p>
-          
+
           <div className="flex justify-center space-x-6 mb-8">
             {socialLinks.map((social) => (
               <a
@@ -60,10 +60,10 @@ export const Footer = () => {
               </a>
             ))}
           </div>
-          
+
           <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
             <p className="text-gray-500 dark:text-gray-500 text-sm">
-              © 2024 John Doe. All rights reserved.
+              Made by Rishav Saha with ❤️.
             </p>
           </div>
         </div>

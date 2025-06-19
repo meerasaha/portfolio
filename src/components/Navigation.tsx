@@ -10,6 +10,7 @@ export const Navigation = () => {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
+    { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -18,9 +19,9 @@ export const Navigation = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           <div className="text-xl font-semibold text-gray-900 dark:text-gray-100">
-            John Doe
+            Rishav Saha
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (

@@ -10,19 +10,19 @@ export const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "john.doe@example.com",
-      href: "mailto:john.doe@example.com"
+      value: "rishavsahaaa@gmail.com",
+      href: "mailto:rishavsahaaa@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 8875999139",
+      href: "tel:+918875999139"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Bihar, IN",
       href: "#"
     }
   ];
@@ -32,10 +32,10 @@ export const Contact = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-gray-900 dark:text-gray-100 mb-6">
-            Get In Touch
+              Get In Touch
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            I'm always interested in new opportunities and collaborations. 
+            I'm always interested in new opportunities and collaborations.
             Let's discuss how we can work together.
           </p>
         </div>
@@ -47,32 +47,32 @@ export const Contact = () => {
               <form className="space-y-6">
                 <div>
                   <Label htmlFor="name" className="text-gray-700 dark:text-gray-300">Name</Label>
-                  <Input 
-                    id="name" 
+                  <Input
+                    id="name"
                     placeholder="Your name"
                     className="mt-2 border-gray-200 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-400 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
                   />
                 </div>
                 <div>
                   <Label htmlFor="email" className="text-gray-700 dark:text-gray-300">Email</Label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    placeholder="your.email@example.com"
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="rishavsahaaa@gmail.com"
                     className="mt-2 border-gray-200 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-400 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
                   />
                 </div>
                 <div>
                   <Label htmlFor="message" className="text-gray-700 dark:text-gray-300">Message</Label>
-                  <textarea 
+                  <textarea
                     id="message"
                     rows={5}
                     placeholder="Tell me about your project..."
                     className="mt-2 w-full px-3 py-2 border border-gray-200 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-blue-500 dark:focus:border-blue-400 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
                   />
                 </div>
-                <Button 
-                  type="submit" 
+                <Button
+                  type="submit"
                   className="w-full bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 text-white py-3 rounded-md transition-all duration-300 hover:scale-105"
                 >
                   Send Message

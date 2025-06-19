@@ -15,36 +15,15 @@ export const Skills = () => {
 
   const skillCategories = [
     {
-      icon: Code2,
-      title: "Frontend Development",
-      color: "from-blue-500 to-cyan-500",
-      skills: [
-        { name: "React/Next.js", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Tailwind CSS", level: 88 },
-        { name: "Vue.js", level: 80 }
-      ]
-    },
-    {
       icon: Database,
       title: "Backend Development",
       color: "from-green-500 to-emerald-500",
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Python", level: 82 },
-        { name: "PostgreSQL", level: 78 },
-        { name: "Redis", level: 75 }
-      ]
-    },
-    {
-      icon: Palette,
-      title: "Design & UI/UX",
-      color: "from-purple-500 to-pink-500",
-      skills: [
-        { name: "Figma", level: 92 },
-        { name: "Adobe XD", level: 85 },
-        { name: "Photoshop", level: 80 },
-        { name: "Framer", level: 75 }
+        { name: "Node.js", level: 95 },
+        { name: "FastAPI", level: 70 },
+        { name: "PostgreSQL", level: 80 },
+        { name: "Redis", level: 60 },
+        { name: "Kafka", level: 60 }
       ]
     },
     {
@@ -52,17 +31,42 @@ export const Skills = () => {
       title: "DevOps & Cloud",
       color: "from-orange-500 to-red-500",
       skills: [
-        { name: "AWS", level: 78 },
-        { name: "Docker", level: 82 },
-        { name: "CI/CD", level: 80 },
-        { name: "Kubernetes", level: 70 }
+        { name: "Docker", level: 90 },
+        { name: "GCP", level: 80 },
+        { name: "AWS", level: 70 },
+        { name: "CI/CD", level: 70 },
       ]
-    }
+    },
+    {
+      icon: Code2,
+      title: "Frontend Development",
+      color: "from-blue-500 to-cyan-500",
+      skills: [
+        { name: "React/Next.js", level: 70 },
+        { name: "Tailwind CSS", level: 70 },
+        { name: "Redux", level: 60 },
+        // { name: "Vue.js", level: 60 },
+      ]
+    },
+
+    {
+      icon: Palette,
+      title: "Design & UI/UX",
+      color: "from-purple-500 to-pink-500",
+      skills: [
+        { name: "Figma", level: 70 },
+        { name: "Canva", level: 80 },
+        // { name: "Adobe XD", level: 85 },
+        // { name: "Photoshop", level: 80 },
+        // { name: "Framer", level: 75 }
+      ]
+    },
   ];
 
   const technologies = [
-    "JavaScript", "TypeScript", "React", "Next.js", "Vue.js", "Node.js", 
-    "Python", "PostgreSQL", "MongoDB", "AWS", "Docker", "Git", "Figma", "Tailwind CSS"
+    "JavaScript", "TypeScript", "Node.js", "FastAPI", "Spring Boot",
+    "Python", "Java", "C++", "PostgreSQL", "MongoDB", "AWS", "GCP", "Docker", "Nginx", "Figma", "Tailwind CSS", "React", "Next.js",
+    "Kotlin", "Android"
   ];
 
   return (
@@ -80,7 +84,7 @@ export const Skills = () => {
             Skills & Expertise
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-            A comprehensive toolkit of modern technologies and design principles 
+            A comprehensive toolkit of modern technologies and design principles
             for creating exceptional digital experiences.
           </p>
         </div>
@@ -98,7 +102,7 @@ export const Skills = () => {
                     {category.title}
                   </h3>
                 </div>
-                
+
                 <div className="space-y-4">
                   {category.skills.map((skill, skillIndex) => (
                     <div key={skillIndex} className="group">
@@ -111,9 +115,9 @@ export const Skills = () => {
                         </span>
                       </div>
                       <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
-                        <div 
+                        <div
                           className={`h-2 rounded-full bg-gradient-to-r ${category.color} transition-all duration-1000 ease-out transform group-hover:scale-y-110`}
-                          style={{ 
+                          style={{
                             width: animateSkills ? `${skill.level}%` : '0%',
                             transitionDelay: `${skillIndex * 200}ms`
                           }}
@@ -134,11 +138,11 @@ export const Skills = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
             {technologies.map((tech, index) => (
-              <Badge 
+              <Badge
                 key={index}
                 variant="outline"
                 className="px-4 py-2 text-sm bg-white/50 dark:bg-gray-800/50 border-gray-300 dark:border-gray-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:border-blue-300 dark:hover:border-blue-500 transition-all duration-300 hover:scale-105 cursor-pointer"
-                style={{ 
+                style={{
                   animationDelay: `${index * 100}ms`,
                   animation: animateSkills ? 'fadeIn 0.5s ease-out' : 'none'
                 }}

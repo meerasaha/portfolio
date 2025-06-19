@@ -9,7 +9,7 @@ export const AnimatedCode = () => {
 
   const codeLines = [
     "const developer = {",
-    "  name: 'John Doe',",
+    "  name: 'Rishav Saha',",
     "  skills: ['React', 'TypeScript', 'Node.js'],",
     "  passion: 'Building amazing experiences',",
     "  status: 'Available for hire'",
