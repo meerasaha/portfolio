@@ -32,6 +32,10 @@ export const Projects = () => {
     }
   ];
 
+  const handleRedirect = (url: string) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section id="projects" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-6">
@@ -48,8 +52,8 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <Card3D key={index}>
               <div className="aspect-video overflow-hidden">
-                <img 
-                  src={project.image} 
+                <img
+                  src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -63,7 +67,7 @@ export const Projects = () => {
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech, techIndex) => (
-                    <span 
+                    <span
                       key={techIndex}
                       className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-full hover:scale-105 transition-transform duration-200"
                     >
@@ -72,11 +76,15 @@ export const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" className="flex-1 border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:scale-105 transition-all duration-200">
+                  <Button variant="outline" size="sm" className="flex-1 border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:scale-105 transition-all duration-200"
+                    onClick={() => handleRedirect(project.liveUrl)}
+                  >
                     <ExternalLink size={16} className="mr-2" />
                     Live Demo
                   </Button>
-                  <Button variant="outline" size="sm" className="flex-1 border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:scale-105 transition-all duration-200">
+                  <Button variant="outline" size="sm" className="flex-1 border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:scale-105 transition-all duration-200"
+                    onClick={() => handleRedirect(project.githubUrl)}
+                  >
                     <Github size={16} className="mr-2" />
                     Code
                   </Button>

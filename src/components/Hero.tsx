@@ -4,6 +4,14 @@ import { ArrowDown } from "lucide-react";
 import { FloatingShapes } from "./FloatingShapes";
 
 export const Hero = () => {
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'auto' });
+    }
+  };
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
       <FloatingShapes />
@@ -24,6 +32,7 @@ export const Hero = () => {
             <Button
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              onClick={() => scrollToSection('projects')}
             >
               View My Work
             </Button>
@@ -31,6 +40,7 @@ export const Hero = () => {
               variant="outline"
               size="lg"
               className="border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              onClick={() => scrollToSection('contact')}
             >
               Get In Touch
             </Button>
