@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DOMAINS="rishavsaha.duckdns.org www.rishavsaha.duckdns.org"
-EMAIL="rishavsahaaa@gmail.com"
+DOMAINS="rishav2404.duckdns.org"
+EMAIL="rishavcreative24@gmail.com"
 
 # Build the domain arguments for Certbot
 DOMAIN_ARGS=""
